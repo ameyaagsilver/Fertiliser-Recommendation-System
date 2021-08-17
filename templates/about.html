@@ -1,0 +1,281 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Fertilizer Recommendation</title>
+	<!-- Bootstrap core CSS -->
+	<link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+	<!-- Fontawesome CSS -->
+	<link href="{% static 'css/all.css' %}" rel="stylesheet">
+	<link rel="shortcut icon" href="{% static 'images/favicon.png' %}">
+	<!-- Custom styles for this template -->
+	<link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+	<!-- Navigation -->
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-light top-nav fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="{% url 'home' %}">
+				<img src="{% static 'images/logo.jpg' %}" class="logo" alt="logo" />
+			</a>
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+				data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="fas fa-bars"></span>
+			</button>
+			<div class="collapse navbar-collapse myDiv" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link page1 " href="{% url 'home' %}">Home</a>
+					</li>
+					<li>
+						<a class="nav-link page2" href="{% url 'recommend' %}">Fertilizer Recommend</a>
+					</li>
+					<li>
+						<a class="nav-link page3" href="{% url 'services' %}">Why Soil test?</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link page4" href="{% url 'faq' %}">FAQ's</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="{% url 'about' %}">About</a>
+					</li>
+					<li class="nav-item">
+					<li class="nav-item">
+						<a class="nav-link" href="{% url 'contact' %}">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- full Title -->
+	<div class="full-title" style="background-image: url('static/images/all-title-bg.jpg')">
+		<div class="container">
+			<!-- Page Heading/Breadcrumbs -->
+			<h1 class="mt-4 mb-3">About
+
+			</h1>
+		</div>
+	</div>
+	<!-- Page Content -->
+	<div class="container">
+		<div class="breadcrumb-main">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item">
+					<a href="index.html">Home</a>
+				</li>
+				<li class="breadcrumb-item active">About</li>
+			</ol>
+		</div>
+		<!-- About Content -->
+		<div class="about-main">
+			<div class="row">
+				<div class="col-lg-6">
+					<img class="img-fluid rounded mb-4" src="{% static 'images/aboutimg1.jpg' %}" alt="" />
+				</div>
+				<div class="col-lg-6">
+					<h2>About Fertilizer Recommendation System</h2>
+					<p>With the aim of sustainable crop production, reduction in the misuse of fertilizers and reduction of input cost by
+					optimizing the present pattern of excessive fertilizer application, our team provides fertilizer recommendation through
+					both the manual and soil test based interpretation of plant nutrients through soil database and static laboratory soil
+					analysis.</p>
+					<p>Our team has developed web-based software named Fertilizer Recommendation System(FRS). The system is capable of
+					generating fertilizer recommendations for selected crops by analysing the soil database developed.</p>
+					<p>The software requires proportion of nutrients in soil, land type, and crop type and variety information to generate
+					crop-specific instant fertilizer recommendation.</p>
+				</div>
+			</div>
+			<!-- /.row -->
+		</div>
+
+		<!-- Team Members -->
+		<div class="team-members-box">
+			<h2>Our Team</h2>
+			<div class="row">
+				<div class="col-lg-3 mb-4">
+					<div class="card h-100 text-center">
+						<img class="card-img-top" src="{% static 'images/photo1.jpg' %}" alt="" />
+						<div class="card-body">
+							<h4 class="card-title">Ketan Vaish</h4>
+							<h6 class="card-subtitle mb-2 text-muted">Leader</h6>
+							<p class="card-text">2nd year student in ISE department of R.V. College of Engineering.</p>
+						</div>
+						<div class="card-footer">
+							<ul>
+								<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+								<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+								<li><a href="#"><i class="fab fa-github"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 mb-4">
+					<div class="card h-100 text-center">
+						<img class="card-img-top" src="{% static 'images/photo2.jpg' %}" alt="" />
+						<div class="card-body">
+							<h4 class="card-title">Ameya Mahadev Gonal</h4>
+							<h6 class="card-subtitle mb-2 text-muted">Member</h6>
+							<p class="card-text">2nd year student in ISE department of R.V. College of Engineering.</p>
+						</div>
+						<div class="card-footer">
+							<ul>
+								<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+								<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+								<li><a href="#"><i class="fab fa-github"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 mb-4">
+					<div class="card h-100 text-center">
+						<img class="card-img-top" src="{% static 'images/photo3.jpg' %}" alt="" />
+						<div class="card-body">
+							<h4 class="card-title">Sahil Sharma</h4>
+							<h6 class="card-subtitle mb-2 text-muted">Member</h6>
+							<p class="card-text">2nd year student in ISE department of R.V. College of Engineering.</p>
+						</div>
+						<div class="card-footer">
+							<ul>
+								<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+								<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+								<li><a href="#"><i class="fab fa-github"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 mb-4">
+					<div class="card h-100 text-center">
+						<img class="card-img-top" src="{% static 'images/photo4.jpg' %}" alt="" />
+						<div class="card-body">
+							<h4 class="card-title">Harshit Handa</h4>
+							<h6 class="card-subtitle mb-2 text-muted">Member</h6>
+							<p class="card-text">2nd year student in ISE department of R.V. College of Engineering.</p>
+						</div>
+						<div class="card-footer">
+							<ul>
+								<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+								<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+								<li><a href="#"><i class="fab fa-github"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- Our Customers -->
+		<!-- <div class="customers-box">
+			<h2>Our Customers</h2> -->
+			<!-- <div class="row">
+				<div class="col-lg-2 col-sm-4 mb-4">
+					<img class="img-fluid" src="images/logo_01.png" alt="" />
+				</div>
+				<div class="col-lg-2 col-sm-4 mb-4">
+					<img class="img-fluid" src="images/logo_02.png" alt="" />
+				</div>
+				<div class="col-lg-2 col-sm-4 mb-4">
+					<img class="img-fluid" src="images/logo_03.png" alt="" />
+				</div>
+				<div class="col-lg-2 col-sm-4 mb-4">
+					<img class="img-fluid" src="images/logo_04.png" alt="" />
+				</div>
+				<div class="col-lg-2 col-sm-4 mb-4">
+					<img class="img-fluid" src="images/logo_05.png" alt="" />
+				</div>
+				<div class="col-lg-2 col-sm-4 mb-4">
+					<img class="img-fluid" src="images/logo_06.png" alt="" />
+				</div>
+			</div> -->
+			<!-- /.row -->
+		<!-- </div> -->
+		<!-- /.container -->
+	</div>
+
+	<!-- /.container -->
+	<!--footer starts from here-->
+	<footer class="footer">
+		<div class="container bottom_border">
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-sm-6 col">
+					<h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+					<!--headin5_amrc-->
+					<p><i class="fa fa-location-arrow"></i> R.V. College of Engineering, Mysore Rd, Vidyaniketan post,
+						Bengaluru-560059 </p>
+					<p><i class="fa fa-phone"></i> +91-9876543210 </p>
+					<p><i class="fa fa fa-envelope"></i> response-team-fr@gmail.com </p>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 col">
+					<h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
+					<!--headin5_amrc ends here-->
+					<ul class="footer_ul2_amrc">
+						<li>
+							<a href="#"><i class="fab fa-linkedin fleft padding-right"></i> </a>
+							<p><a href="https://www.linkedin.com/in/sahil-sharma-396b49179/">Linkedin : Sahil Sharma</a>
+							</p>
+						</li>
+						<li>
+							<a href="#"><i class="fab fa-linkedin fleft padding-right"></i> </a>
+							<p><a href="https://www.linkedin.com/in/ameya-mahadev-gonal-a2ba59134/">Linkedin : Ameya
+									MG</a></p>
+						</li>
+						<li>
+							<a href="#"><i class="fab fa-linkedin fleft padding-right"></i> </a>
+							<p><a href="https://www.linkedin.com/in/ktnvaish/">Linkedin : Ketan Vaish</a></p>
+						</li>
+						<li>
+							<a href="#"><i class="fab fa-linkedin fleft padding-right"></i> </a>
+							<p><a href="#">Linkedin : Harshit Handa</a>
+							</p>
+						</li>
+					</ul>
+					<!--footer_ul2_amrc ends here-->
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6">
+					<h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+					<!--headin5_amrc-->
+					<ul class="footer_ul_amrc">
+						<li><a href="#">Default Version</a></li>
+						<li><a href="#">Boxed Version</a></li>
+						<li><a href="#">Our Team </a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Our Services</a></li>
+						<li><a href="#">Get In Touch</a></li>
+					</ul>
+	
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="footer-logo">
+				<a href="#"><img src="{% static 'images/logo.jpg' %}" alt="" /></a>
+			</div>
+			<!--foote_bottom_ul_amrc ends here-->
+			<p class="copyright text-center">All Rights Reserved. &copy; 2021 <a href="{% url 'recommend' %}">Fertilizer Recommendation</a>
+				Design By :
+				<a href="#">Team 5</a>
+			</p>
+			<ul class="social_footer_ul">
+				<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+				<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+				<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+			</ul>
+			<!--social_footer_ul ends here-->
+		</div>
+	</footer>
+	
+	<!-- Bootstrap core JavaScript -->
+	<script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+	<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+	<script src="index.js"></script>
+	</body>
+	
+	</html>

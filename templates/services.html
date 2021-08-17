@@ -1,0 +1,228 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Fertilizer Recommendation</title>
+	<!-- Bootstrap core CSS -->
+	<link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+	<!-- Fontawesome CSS -->
+	<link href="{% static 'css/all.css' %}" rel="stylesheet">
+	<link rel="shortcut icon" href="{% static 'images/favicon.png' %}">
+	<!-- Custom styles for this template -->
+	<link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+	<!-- Navigation -->
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-light top-nav fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="{% url 'home' %}">
+				<img src="{% static 'images/logo.jpg' %}" class="logo" alt="logo" />
+			</a>
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+				data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="fas fa-bars"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link page1" href="{% url 'home' %}">Home</a>
+					</li>
+					<li>
+						<a class="nav-link page2" href="{% url 'recommend' %}">Fertilizer Recommend</a>
+					</li>
+					<li>
+						<a class="nav-link page3 active" href="{% url 'services' %}">Why Soil test?</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link page4" href="{% url 'faq' %}">FAQ's</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="{% url 'about' %}">About</a>
+					</li>
+					<li class="nav-item">
+					<li class="nav-item">
+						<a class="nav-link" href="{% url 'contact' %}">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- full Title -->
+	<div class="full-title" style="background-image: url('static/images/all-title-bg.jpg')">
+		<div class="container">
+			<!-- Page Heading/Breadcrumbs -->
+			<h1 class="mt-4 mb-3">Why Soil Test?
+				<small>Info</small>
+			</h1>
+		</div>
+	</div>
+
+	<!-- Page Content -->
+	<div class="container">
+		<div class="breadcrumb-main">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item">
+					<a href="index.html">Home</a>
+				</li>
+				<li class="breadcrumb-item active">Why soil test?</li>
+			</ol>
+		</div>
+		<div class="lead" style="margin-bottom: 10vh;">
+			<h2>Gain knowledge about the soil condition and how to improve it</h2>
+			<p>Fertile soils are necessary to grow healthy crops. To improve soil fertility, it needs to be measured first. Soil
+			fertility is determined by the chemical, physical and biological properties of soil. Properties such as soil texture,
+			colour and structure are visible. However, it is impossible to see the chemical composition of soil. This is what needs
+			to be measured and why soil sampling is essential. Soil tests are used to determine the nutrient content and pH level of
+			a soil. With this information the exact type and quantity of fertiliser that needs to be applied to improve soil
+			fertility can be defined.</p>
+			<br>
+			<h2>It is the first step into soil fertility management</h2>
+			<p>With a proper soil fertility management strategy, farmers can maximize the efficiency of nutrients and water use and
+			improve their agricultural productivity. Soil testing is the first step towards proper soil fertility management. Soil
+			testing gives valuable information and helps you improve your soil’s health.</p>
+			<br>
+			<h2>Minimise fertiliser expenditures</h2>
+			<p>You will not waste money on unnecessary fertilisers if the exact type and quantity of fertilisers your soil and crops
+			need is known. Moreover, inorganic fertilisers in general and nutrients such as phosphorus and potassium are limited
+			resources. Their prices are increasing over the years and because this trend is set to last it is clever to adapt now to
+			the inevitable changes.</p>
+			<br>
+			<h2>Avoid over-fertilisation</h2>
+			<p>Applying fertiliser without knowing the actual nutrient needs of your soil might lead to over-fertilisation. By testing
+			your soils and receiving fertiliser recommendations, you can avoid using an excessive amount of fertiliser. This is
+			better for your crops and the environment. Fertiliser burn and leaves turning yellow is the outcome of
+			over-fertilisation for crops. It might also result in nutrient leaching, water pollution and irreversible damages to the
+			surrounding aquatic life.</p>
+			<br>
+			<h2>Avoid soil degradation</h2>
+			<p>Soil degradation is a threat to every farmer. It is estimated that each year 24 billion tonnes of fertile soil are lost
+			due to erosion which is a result of unbalanced soil management. A proper soil management is guaranteed by soil tests
+			followed by the application of the right fertilisers at the right moment. Besides avoiding risks of soil degradation, it
+			is a more efficient and financially more interesting practice. Moreover, soil restoration is a difficult, costly and
+			time-consuming process.</p>
+		</div>
+	</div>
+
+	<!-- /.container -->
+	<!--footer starts from here-->
+	<footer class="footer">
+		<div class="container bottom_border">
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-sm-6 col">
+					<h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+					<!--headin5_amrc-->
+					<p><i class="fa fa-location-arrow"></i> R.V. College of Engineering, Mysore Rd, Vidyaniketan post,
+						Bengaluru-560059 </p>
+					<p><i class="fa fa-phone"></i> +91-9876543210 </p>
+					<p><i class="fa fa fa-envelope"></i> response-team-fr@gmail.com </p>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 col">
+					<h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
+					<!--headin5_amrc ends here-->
+					<ul class="footer_ul2_amrc">
+						<li>
+							<a href="#"><i class="fab fa-linkedin fleft padding-right"></i> </a>
+							<p><a href="https://www.linkedin.com/in/sahil-sharma-396b49179/">Linkedin : Sahil Sharma</a>
+							</p>
+						</li>
+						<li>
+							<a href="#"><i class="fab fa-linkedin fleft padding-right"></i> </a>
+							<p><a href="https://www.linkedin.com/in/ameya-mahadev-gonal-a2ba59134/">Linkedin : Ameya
+									MG</a></p>
+						</li>
+						<li>
+							<a href="#"><i class="fab fa-linkedin fleft padding-right"></i> </a>
+							<p><a href="https://www.linkedin.com/in/ktnvaish/">Linkedin : Ketan Vaish</a></p>
+						</li>
+						<li>
+							<a href="#"><i class="fab fa-linkedin fleft padding-right"></i> </a>
+							<p><a href="#">Linkedin : Harshit Handa</a>
+							</p>
+						</li>
+					</ul>
+					<!--footer_ul2_amrc ends here-->
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6">
+					<h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+					<!--headin5_amrc-->
+					<ul class="footer_ul_amrc">
+						<li><a href="#">Default Version</a></li>
+						<li><a href="#">Boxed Version</a></li>
+						<li><a href="#">Our Team </a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Our Services</a></li>
+						<li><a href="#">Get In Touch</a></li>
+					</ul>
+	
+				</div>
+				<!-- <div class="col-lg-3 col-md-6 col-sm-6 ">
+						<h5 class="headin5_amrc col_white_amrc pt2">Recent posts</h5>
+						headin5_amrc
+						 	<ul class="footer_ul_amrc">
+							<li class="media">
+								<div class="media-left">
+									<img class="img-fluid" src="images/post-img-01.jpg" alt="" />
+								</div>
+								<div class="media-body">
+									<p>How to find best dog food?</p>
+									<span>22 Sep 2018</span>
+								</div>
+							</li>
+							<li class="media">
+								<div class="media-left">
+									<img class="img-fluid" src="images/post-img-02.jpg" alt="" />
+								</div>
+								<div class="media-body">
+									<p>How to find best dog food?</p>
+									<span>34 Sep 2018</span>
+								</div>
+							</li>
+							<li class="media">
+								<div class="media-left">
+									<img class="img-fluid" src="images/post-img-03.jpg" alt="" />
+								</div>
+								<div class="media-body">
+									<p>How to find best dog food?</p>
+									<span>30 Sep 2018</span>
+								</div>
+							</li>
+						</ul> -->
+				<!--footer_ul_amrc ends here-->
+				<!-- </div> -->
+			</div>
+		</div>
+		<div class="container">
+			<div class="footer-logo">
+				<a href="#"><img src="{% static 'images/logo.jpg' %}" alt="" /></a>
+			</div>
+			<!--foote_bottom_ul_amrc ends here-->
+			<p class="copyright text-center">All Rights Reserved. &copy; 2021 <a href="{% url 'recommend' %}">Fertilizer Recommendation</a>
+				Design By :
+				<a href="#">Team 5</a>
+			</p>
+			<ul class="social_footer_ul">
+				<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+				<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+				<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+			</ul>
+			<!--social_footer_ul ends here-->
+		</div>
+	</footer>
+	
+	<!-- Bootstrap core JavaScript -->
+	<script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+	<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+	<script src="index.js"></script>
+	</body>
+	
+	</html>

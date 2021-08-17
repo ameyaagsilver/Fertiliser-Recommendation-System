@@ -1,0 +1,242 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Fertilizer Recommendation</title>
+	<!-- Bootstrap core CSS -->
+	<link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+	<!-- Fontawesome CSS -->
+	<link href="{% static 'css/all.css' %}" rel="stylesheet">
+	<link rel="shortcut icon" href="{% static 'images/favicon.png' %}">
+	<!-- Custom styles for this template -->
+	<link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+	<!-- Navigation -->
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-light top-nav fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="{% url 'home' %}">
+				<img src="{% static 'images/logo.jpg' %}" class="logo" alt="logo" />
+			</a>
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+				data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="fas fa-bars"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link page1" href="{% url 'home' %}">Home</a>
+					</li>
+					<li>
+						<a class="nav-link page2" href="{% url 'recommend' %}">Fertilizer Recommend</a>
+					</li>
+					<li>
+						<a class="nav-link page3" href="{% url 'services' %}">Why Soil test?</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link page4 active" href="{% url 'faq' %}">FAQ's</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="{% url 'about' %}">About</a>
+					</li>
+					<li class="nav-item">
+					<li class="nav-item">
+						<a class="nav-link" href="{% url 'contact' %}">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- full Title -->
+	<div class="full-title" style="background-image: url('static/images/all-title-bg.jpg')">
+		<div class="container">
+			<!-- Page Heading/Breadcrumbs -->
+			<h1 class="mt-4 mb-3">FAQ
+
+			</h1>
+		</div>
+	</div>
+
+	<!-- Page Content -->
+	<div class="container">
+		<div class="breadcrumb-main">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item">
+					<a href="index.html">Home</a>
+				</li>
+				<li class="breadcrumb-item active">FAQ</li>
+			</ol>
+		</div>
+
+		<div class="faq-main">
+			<div class="" id="accordion" role="tablist" aria-multiselectable="true">
+				<div class="card accordion-single">
+					<div class="card-header" role="tab" id="headingOne">
+						<h5 class="mb-0">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true"
+								aria-controls="collapseOne">Why should you use recommended fertilizer for your crops?</a>
+						</h5>
+					</div>
+					<div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+						<div class="card-body">
+							Different crops need different proportion of basic nutrients i.e. different need of Nitrogen, Potassium and Phosphorous
+							for their proper growth and soil also degrades after every crop produced. It js important to know how much of nutrients
+							are already present in the soil and how much we should add for a particular crop of your choice to be grown so as to
+							ensure there is no excess fertiliser in the soil and hence preventing various soil hazards caused due to excess
+							fertilisers.
+						</div>
+					</div>
+				</div>
+				<div class="card accordion-single">
+					<div class="card-header" role="tab" id="headingTwo">
+						<h5 class="mb-0">
+							<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+								aria-expanded="false" aria-controls="collapseTwo">What are the outcome of a soil
+								test?</a>
+						</h5>
+					</div>
+					<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+						<div class="card-body">
+							The owner of the land will get to know how much of Nitrogen-Phosphorous-Potassium is present in the soil. Moreover, the
+							farmer will get to know about the pH value of the soil which is another important factor in determining the produce of a
+							grown crop. There are several other tests to know about many other kind of elements in the soil.
+						</div>
+					</div>
+				</div>
+				<div class="card accordion-single">
+					<div class="card-header" role="tab" id="headingThree">
+						<h5 class="mb-0">
+							<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"
+								aria-expanded="false" aria-controls="collapseThree">How is technology involved in recommending fertilizers?</a>
+						</h5>
+					</div>
+					<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+						<div class="card-body">
+							To recommend a fertiliser we need two things. First, the soil test data and the parameters of the soil(such as N, P, K,
+							pH etc.). Secondly, the valid data through which anyone can make a model to recommend the fertiliser needed for any
+							crop. Therefore, to process the huge data set and to recommend a solution technology plays a pivotal role.
+						</div>
+					</div>
+				</div>
+				<div class="card accordion-single">
+					<div class="card-header" role="tab" id="headingThree">
+						<h5 class="mb-0">
+							<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour"
+								aria-expanded="false" aria-controls="collapseFour">How farmers be benefited from this website?</a>
+						</h5>
+					</div>
+					<div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
+						<div class="card-body">
+							Farmer can get his soil tested and can get various parameters required to give as an input to our web application.
+							Thereby he by himself enter the values or he can go to any person who knows how to handle the website and enter the
+							inputs in the website. He will then get the fertiliser he would use depending on the parameters he has entered into the
+							website. That would ensure that there won’t be any excess fertiliser loss and most importantly he will get maximised
+							produce with no excess fertilizers.
+
+						</div>
+					</div>
+				</div>
+				<div class="card accordion-single">
+					<div class="card-header" role="tab" id="headingFive">
+						<h5 class="mb-0">
+							<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive"
+								aria-expanded="false" aria-controls="collapseFive">Who can use this service?</a>
+						</h5>
+					</div>
+					<div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive">
+						<div class="card-body">
+							Since it is free of cost it can be used by anyone who is able to use search engines.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+<footer class="footer">
+	<div class="container bottom_border">
+		<div class="row">
+			<div class="col-lg-4 col-md-6 col-sm-6 col">
+				<h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+				<!--headin5_amrc-->
+				<p><i class="fa fa-location-arrow"></i> R.V. College of Engineering, Mysore Rd, Vidyaniketan post,
+					Bengaluru-560059 </p>
+				<p><i class="fa fa-phone"></i> +91-9876543210 </p>
+				<p><i class="fa fa fa-envelope"></i> response-team-fr@gmail.com </p>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-6 col">
+				<h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
+				<!--headin5_amrc ends here-->
+				<ul class="footer_ul2_amrc">
+					<li>
+						<a href="#"><i class="fab fa-linkedin fleft padding-right"></i> </a>
+						<p><a href="https://www.linkedin.com/in/sahil-sharma-396b49179/">Linkedin : Sahil Sharma</a>
+						</p>
+					</li>
+					<li>
+						<a href="#"><i class="fab fa-linkedin fleft padding-right"></i> </a>
+						<p><a href="https://www.linkedin.com/in/ameya-mahadev-gonal-a2ba59134/">Linkedin : Ameya
+								MG</a></p>
+					</li>
+					<li>
+						<a href="#"><i class="fab fa-linkedin fleft padding-right"></i> </a>
+						<p><a href="https://www.linkedin.com/in/ktnvaish/">Linkedin : Ketan Vaish</a></p>
+					</li>
+					<li>
+						<a href="#"><i class="fab fa-linkedin fleft padding-right"></i> </a>
+						<p><a href="#">Linkedin : Harshit Handa</a>
+						</p>
+					</li>
+				</ul>
+				<!--footer_ul2_amrc ends here-->
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-6">
+				<h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+				<!--headin5_amrc-->
+				<ul class="footer_ul_amrc">
+					<li><a href="#">Default Version</a></li>
+					<li><a href="#">Boxed Version</a></li>
+					<li><a href="#">Our Team </a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Our Services</a></li>
+					<li><a href="#">Get In Touch</a></li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="footer-logo">
+			<a href="#"><img src="{% static 'images/logo.jpg' %}" alt="" /></a>
+		</div>
+		<!--foote_bottom_ul_amrc ends here-->
+		<p class="copyright text-center">All Rights Reserved. &copy; 2021 <a href="{% url 'recommend' %}">Fertilizer Recommendation</a>
+			Design By :
+			<a href="#">Team 5</a>
+		</p>
+		<ul class="social_footer_ul">
+			<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+			<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+			<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+			<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+		</ul>
+		<!--social_footer_ul ends here-->
+	</div>
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="index.js"></script>
+</body>
+
+</html>
