@@ -71,7 +71,7 @@
     <div class="breadcrumb-main">
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <a href="index.html">Home</a>
+          <a href="{% url 'home' %}">Home</a>
         </li>
         <li class="breadcrumb-item active">Contact</li>
       </ol>
@@ -109,11 +109,11 @@
     <div class="row">
       <div class="col-lg-8 mb-4 contact-left">
         <h3>Send us a Message</h3>
-        <form name="sentMessage" id="contactForm" novalidate>
+        <form action="https://formspree.io/f/mleaonnn" method="POST" name="sentMessage" id="contactForm" novalidate>
           <div class="control-group form-group">
             <div class="controls">
               <label>Full Name:</label>
-              <input type="text" class="form-control" id="name" required
+              <input type="text" name="Name" class="form-control" id="name" required
                 data-validation-required-message="Please enter your name.">
               <p class="help-block"></p>
             </div>
@@ -121,21 +121,21 @@
           <div class="control-group form-group">
             <div class="controls">
               <label>Phone Number:</label>
-              <input type="tel" class="form-control" id="phone" required
+              <input type="tel" name="Phone Number" class="form-control" id="phone" required
                 data-validation-required-message="Please enter your phone number.">
             </div>
           </div>
           <div class="control-group form-group">
             <div class="controls">
               <label>Email Address:</label>
-              <input type="email" class="form-control" id="email" required
+              <input type="email" name="replyto" class="form-control" id="email" required
                 data-validation-required-message="Please enter your email address.">
             </div>
           </div>
           <div class="control-group form-group">
             <div class="controls">
               <label>Message:</label>
-              <textarea rows="5" cols="100" class="form-control" id="message" required
+              <textarea name="message" rows="5" cols="100" class="form-control" id="message" required
                 data-validation-required-message="Please enter your message" maxlength="999"
                 style="resize:none"></textarea>
             </div>
